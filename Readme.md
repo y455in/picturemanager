@@ -1,3 +1,20 @@
+Photo Album Manager
+This is a simple Photo Album manager written using Spring MVC. The manager implements a REST
+API with the following functionality:
+• Standard CRUD operations for albums,and photos.
+• Add a photo to an existing album
+• Remove a photo from an existing album
+• Return a list of all albums, with the photos associated with those albums.
+• Return a list of photos given an album id.
+
+
+The REST endpoint “init” initializes all of the users, albums, and photos from the REST
+resources located here:
+
+Albums: https://jsonplaceholder.typicode.com/albums
+Photos: https://jsonplaceholder.typicode.com/photos
+
+
 System requirements:
 Java Jdk 1.8 
 Maven 3.3.3+

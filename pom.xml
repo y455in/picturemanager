@@ -33,7 +33,7 @@
 		<!-- test dependencies -->
 		<surefire.plugin.version>2.19.1</surefire.plugin.version>
 		<junit.version>4.12</junit.version>
-		<jmockit.version>1.30</jmockit.version>
+		<jmockit.version>1.40</jmockit.version>
 		<commons.lang.version>3.5</commons.lang.version>
 	</properties>
 
@@ -89,7 +89,7 @@
 						</manifest>
 						<manifestEntries>
 							<url>${project.url}</url>
-							<Build-Number>${BUILD_NUMBER}</Build-Number>
+							<Build-Number>1.0.0</Build-Number>
 						</manifestEntries>
 					</archive>
 				</configuration>
@@ -112,7 +112,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${surefire.plugin.version}</version>
 				<configuration>
-					<forkMode>never</forkMode>
+					<forkCount>1</forkCount>
 					<failIfNoTests>false</failIfNoTests>
 					<printSummary>true</printSummary>
 				</configuration>
